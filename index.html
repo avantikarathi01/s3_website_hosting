@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Corner</title>
+
+
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    body {
+        background-color: rgb(216, 177, 177);
+        color: rgb(157, 11, 11)
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(151, 30, 30);
+        padding: 15px 25px;
+    }
+
+    header h1 {
+        color: white;
+        font-size: 28px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 15px;
+        font-size: 18px;
+    }
+
+    nav a:hover {
+        color: #ffdd00;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+        background-image: url("background.png");
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+
+        color: white;
+      
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        color: rgb(215, 214, 214);
+
+    }
+
+    .hero h1:hover {
+        transform: scale(1.05);
+    }
+
+    .hero p {
+        font-size: 20px;
+        color: rgb(255, 253, 253);
+    }
+
+    .hero p:hover {
+        transform: scale(1.05);
+    }
+
+    .menu {
+        padding: 40px 20px;
+
+    }
+
+    h2 {
+        text-align: center;
+        color: rgb(94, 15, 15);
+    }
+
+    .items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .card {
+        background: #d8c9c9;
+        padding: 12px;
+        border-radius: 13px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .price {
+        color: #f17500;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+
+
+
+
+
+    table {
+        margin: 40px auto;
+        border-collapse: collapse;
+        width: 80%;
+        font-size: 20px;
+        background: #e8d8d8;
+        box-shadow: 0 3px 10px rgba(47, 30, 30, 0.1);
+    }
+
+    th,
+    td {
+        padding: 14px;
+        border: 2px solid #baa9a9;
+        text-align: center;
+    }
+
+    th {
+        background: rgb(151, 30, 30);
+        color: white;
+        font-size: 22px;
+
+    }
+
+
+    .about {
+        background: #e8d8d8;
+        ;
+        width: 80%;
+        margin: 30px auto;
+        padding: 20px 25px;
+        font-size: 20px;
+        line-height: 1.6;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        color: #4d2f2f;
+        text-align: center;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 90%;
+        max-width: 400px;
+        padding: 10px;
+        margin: 7px 0;
+        border: 3px solid #4d2f2f;
+        border-radius: 6px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button {
+        padding: 10px 25px;
+        background: #952222;
+        border: none;
+        color: #ffffff;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer {
+        background: rgb(151, 30, 30);
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <header id="home">
+        <h1>Food Corner</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#speciality">Speciality</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <h1>Fresh & Delicious Meals</h1>
+        <p>Feel the taste of happiness!</p>
+    </section>
+<br>
+    <section class="speciality" id="speciality">
+        <h2>Our Speciality</h2>
+
+        <div class="items" >
+            <div class="card">
+                <img src="pizza.png">
+                <h3>Pizza</h3>
+                <p class="price">₹199</p>
+            </div>
+
+            <div class="card">
+                <img src="burger.png">
+                <h3>Burger</h3>
+                <p class="price">₹99</p>
+            </div>
+
+            <div class="card">
+                <img src="pasta.png">
+                <h3>Pasta</h3>
+                <p class="price">₹159</p>
+            </div>
+            <div class="card">
+                <img src="momos.png">
+                <h3>Momos</h3>
+                <p class="price">₹149</p>
+            </div>
+        </div>
+    </section>
+    <h2 class="section-title">Menu</h2>
+    <table class="MENU" id="menu">
+        <tr>
+            <th>North Indian</th>
+            <th>South Indian</th>
+            <th>Chinese</th>
+        </tr>
+        <tr>
+            <td>Paneer Butter Masala
+                <p class="price">₹999</p>
+            </td>
+            <td>Masala Dosa
+                <p class="price">₹990</p>
+            </td>
+            <td>Veg Momos
+                <p class="price">₹690</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Dal Makhani
+                <p class="price">₹880</p>
+            </td>
+            <td>Idli Sambar
+                <p class="price">₹999</p>
+            </td>
+            <td>Veg Manchurian
+                <p class="price">₹899</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Chole Bhature
+                <p class="price">₹789</p>
+            </td>
+            <td>Uttapam
+                <p class="price">₹899</p>
+            </td>
+            <td>Fried Rice<p class="price">₹679</p>
+            </td>
+        </tr>
+    </table>
+
+    <h2 class="section-title">About Us</h2>
+    <div class="about" id="about">
+        Welcome to <b>Food Corner</b>, where we serve fresh and pure vegetarian dishes made with love.
+        Our goal is to provide healthy, tasty and affordable meals using high-quality ingredients.
+        From traditional Indian recipes to spicy Chinese flavours, we make sure every bite brings happiness.
+    </div>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea rows="4" placeholder="Message"></textarea>
+        <a href="thanks.html">
+            <button type="button">Send Message</button>
+        </a>
+
+    </section>
+
+
+    <footer>© 2025 Food Corner | All Rights Reserved</footer>
+
+</body>
+
+</html>
